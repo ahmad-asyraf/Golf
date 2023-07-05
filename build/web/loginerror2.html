@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <style>
+        body{
+            background-image: url("images/golf.jpg");
+            background-size: cover;
+            font-family:sans-serif;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 720px;
+        }
+        .loginbox{
+            width: 320px;
+            height: auto;
+            box-sizing: border-box;
+            padding: 30px 30px;
+            background: rgba(255,250,250,0.85);
+            margin:0 auto;
+        }
+        h2{
+            position:relative;
+            margin :0 auto;
+            color: #2f4f4f;
+            font-size: 22px;
+            padding: 0 0 20px;
+        }
+        h3{
+            position:relative;
+            margin :0 auto;
+            color: #ff2929;
+            font-size: 18px;
+            padding: 0 0 20px;
+        }
+        .loginbox input{
+            width:100%;
+            margin-bottom:30px;
+            color: black;
+        }
+        .loginbox input[type="text"],.loginbox input[type="password"]{
+            position:relative;
+            border: none;
+            padding-top: 20px;
+            border-bottom: 1px solid #808080;
+            outline: none;
+            color: black;
+            height: 30px;
+            background: transparent;
+            font-size: 18px;	
+        }
+        .loginbox input[type="submit"]{
+            margin: 0 25px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            color: #fff;
+            background: #313A5E;
+            height: 40px;
+            width: 80%;
+            font-size:18px;
+            cursor: pointer;
+        }
+        .loginbox input[type="submit"]:hover{
+            background: #ABB4D9;
+            color: #262626;
+        }
+    </style>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="css/Login1.css">
+</head>
+<body>
+	<form action="login.jsp" method="post">
+	<div class="container">
+		<div class="loginbox">
+			<h2>Login</h2>
+			<input type="text" name="email" placeholder="Enter Email" required>
+			<input type="password" name="password" placeholder="Enter Password" required>
+			<h3>User Does Not Exist</h3>
+			<input type="submit" value="Login">
+		</div>
+	</div>
+	</form>
+</body>
+</html>

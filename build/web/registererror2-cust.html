@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+     <style>
+        body{
+            background-image: url("images/golf.jpg");
+            background-size: cover;
+            font-family:sans-serif;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 720px;
+            text-align: center;
+        }
+        .registerbox{
+            width: 320px;
+            height: auto;
+            box-sizing: border-box;
+            padding: 30px 30px;
+            background: rgba(255,250,250,0.85);
+            margin:0 auto;
+            text-align: center;
+        }
+        h2{
+            top: 0%;
+            margin: 0 auto;
+            padding: 0 0 30px;
+            color: black;
+            font-size:22px;
+            text-align: center;
+        }
+        h3{
+            position:relative;
+            margin :0 auto;
+            color: #5769b2;
+            font-size: 16px;
+            padding: 0 0 20px;
+            text-align: center;
+        }
+        .registerbox input{
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        .registerbox input[type="text"],.registerbox input[type="password"]{
+            position: relative;
+            border: none;
+            outline: none;
+            height: 30px;
+            border-bottom: 1px solid #808080;
+            color: black;
+            background: transparent;
+            font-size:16px;
+        }
+        .registerbox input[type="submit"]{
+            margin: 0 25px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            color: #fff;
+            background: #313A5E;
+            height: 40px;
+            width: 80%;
+            font-size:18px;
+            cursor: pointer;
+        }
+        .registerbox input[type="submit"]:hover{
+            background: #ABB4D9;
+            color: #262626;
+        }
+    </style>
+<meta charset="ISO-8859-1">
+<title>Customer Register</title>
+<link rel="stylesheet" href="css/Register1.css">
+</head>
+<body>
+	<form action="customerregister.jsp" method="post">
+	<div class="container">
+		<div class="registerbox">
+			<h3>Passwords Do Not Match</h3>
+			<input type="submit" value="Back" >
+		</div>
+		</div>
+	</form>
+</body>
+</html>
